@@ -42,7 +42,12 @@ Also, among the top 5 teams, FC Barcelona has the highest improvement percentage
 
 ![Top 5 Nation Ratings (1)](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/b56f2393-545d-4b0d-972c-afdfaddac929)
 
-Unexpectedly, Libya is the Nation with the best average overall rating of 73.33. This is because only 3 players are taken into consideration
+Unexpectedly, Libya is the Nation with the best average overall rating of 73.33. This is because only 3 players are taken into consideration. Brazil completes the top 3 with an average of 71.6.
+Good teams such as Spain, England, and France are very low in the ranking since they have a lot of players. England has 1632 players with an average rating of 64. It does not reflect the ranking of the team
+
+
+![Top 5 Nations Using the Best 20 Players of the Team](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/969a7fd3-b404-4f11-8133-1b8b16353e09)
+
 
 
 
