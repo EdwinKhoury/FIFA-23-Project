@@ -24,6 +24,40 @@ In this top 10, all of the teams are in the top 5 European leagues: Six of them 
 Real Madrid CF is the club with the highest wage, accounting for a total of €224 million per year.
 
 
+## **Club Rating**
+
+![Top 5 Clubs Rating](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/675eed5f-d9c2-4f5a-b424-c3d37f788f40)
+
+
+Considering the whole squad when computing the average rating of the club, FC Bayern Munchen has the highest rating with 80.59. Also, its defense (80.2), as well as 
+its midfield (82.14) is also ranked first. However, compared to the other clubs completing the top 5, FC Bayern Munchen has the least number of players which can explain the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## **Actual Team of the Year**
 
 ![Actual Team of the Year](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/7e233bb1-93c8-4d9a-b5a9-47998f1f58f4)
