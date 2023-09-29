@@ -12,8 +12,19 @@ Most of the players that make it into professional football are center-backs.
 
 ![Number of Player per Country](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/e725c57c-347f-41bb-b2c8-438fa650364c)
 
-United Kingdom has the most active players accounting for a total of 2,140 players, followed by Germany with 1,204. 
-It is also obvious that most of the players are European, and South American
+The United Kingdom has the most active players, accounting for a total of 2,140, followed by Germany with 1,204.
+It is also obvious that most of the players are European and South American.
+
+
+## **Top 10 Annual Wages of Clubs**
+
+![Top 10 Yearly Wages of Clubs](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/a7a4b1c4-5f39-4e02-a11c-b1615bb2040f)
+
+In this top 10, all of the teams are in the top 5 European leagues: 6 of them are English teams, 2 are Spanish, 1 is French and 1 is Italian.
+Real Madrid CF is the club with the highest yearly wage accounting for a total of €224 million. 
+
+
+## **Actual Team of the Year**
 
 
 
