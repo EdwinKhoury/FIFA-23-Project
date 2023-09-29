@@ -1,11 +1,11 @@
 
---1) Best Position (Number of players that plays in each position)
+--1) Best Position (Number of players that play in each position)
 
 SELECT Best_Position, COUNT (Best_Position) AS COUNT
 FROM Fifa23Project..PlayerData
 GROUP BY Best_Position
 ORDER BY COUNT DESC
--- CB is the position with the most playes and CF with the least.
+-- CB is the position with the most players, and CF has the least.
 
 
 ----------------
@@ -23,40 +23,40 @@ ORDER BY COUNT DESC
 ----------------
 
 
---3) Wages by Club (Wages payed by each team on different time scales)
+--3) Wages by Club (Wages paid by each team on different time scales)
 
-SELECT Club_Name, CONCAT('€',SUM ([Wage(in Euro)])/(7*24*3600)) AS Total_wages_per_second,
-	CONCAT('€',SUM ([Wage(in Euro)])/(7*24*60)) AS Total_wages_per_minute,
-	CONCAT('€',SUM ([Wage(in Euro)])/(7*24)) AS Total_wages_per_hour,
-	CONCAT('€',SUM ([Wage(in Euro)])/7) AS Total_wages_per_day,
-	CONCAT('€', SUM ([Wage(in Euro)])/1000000, ' million') AS Total_wages_per_week, 
-	CONCAT('€', (SUM ([Wage(in Euro)])*52)/1000000, ' million') AS Total_wages_per_year
+SELECT Club_Name, CONCAT('â‚¬',SUM ([Wage(in Euro)])/(7*24*3600)) AS Total_wages_per_second,
+	CONCAT('â‚¬',SUM ([Wage(in Euro)])/(7*24*60)) AS Total_wages_per_minute,
+	CONCAT('â‚¬',SUM ([Wage(in Euro)])/(7*24)) AS Total_wages_per_hour,
+	CONCAT('â‚¬',SUM ([Wage(in Euro)])/7) AS Total_wages_per_day,
+	CONCAT('â‚¬', SUM ([Wage(in Euro)])/1000000, ' million') AS Total_wages_per_week, 
+	CONCAT('â‚¬', (SUM ([Wage(in Euro)])*52)/1000000, ' million') AS Total_wages_per_year
 FROM Fifa23Project..PlayerData
 GROUP BY Club_Name
 ORDER BY Total_wages_per_second DESC;
---Real Madrid CF has the highest total wages per year with 224 million Euros.
+--Real Madrid CF has the highest total yearly wages with 224 million Euros.
 
 
 ----------------
 
 
---4) Club rating (Average rating of the club, their defence, midfield and attack)
+--4) Club rating (Average rating of the club, their defense, midfield and attack)
 SELECT
     Club_Name,
 	COUNT (Club_Name) AS num_of_players,
 	AVG(Overall) AS Club_Rating,
-    AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Overall ELSE NULL END) AS Defence_Rating,
+    AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Overall ELSE NULL END) AS Defense_Rating,
     AVG(CASE WHEN Best_Position IN ('CDM', 'CAM', 'CM', 'RM', 'LM') THEN Overall ELSE NULL END) AS Midfield_Rating,
-    AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Overall ELSE NULL END) AS Attack_Rating
+    AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Overall ELSE NULL END) AS Forward_Rating
 	--,AVG(Potential) AS Club_Pot_Rating,
- --   AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Potential ELSE NULL END) AS Defence_Rating,
+ --   AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Potential ELSE NULL END) AS Defense_Rating,
  --   AVG(CASE WHEN Best_Position IN ('CDM', 'CAM', 'CM', 'RM', 'LM') THEN Potential ELSE NULL END) AS Midfield_Rating,
- --   AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Potential ELSE NULL END) AS Attack_Rating
+ --   AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Potential ELSE NULL END) AS Forward_Rating
 FROM Fifa23Project..PlayerData 
 GROUP BY Club_Name
 --ORDER BY Club_Pot_Rating DESC;
 ORDER BY Club_Rating DESC;
---FC Bayern Munchen has the highest club rating as well as the highest defence and midfield.
+--FC Bayern Munchen has the highest club rating as well as the highest defense and midfield.
 --However, compared to the other top 5 clubs, it has the least number of players, which explains the high rating.
 
 
@@ -93,18 +93,18 @@ ORDER BY average_overall_rating DESC
 ----------------
 
 
---6) Country rating (Average rating of the country, their defence, midfield and attack)(Good teams are very low in the ranking since they have a lot of players, they lower the average) 
+--6) Country rating (Average rating of the country, their defense, midfield and attack)
 SELECT
     Nationality,
 	COUNT (Nationality) AS COUNT,
 	AVG(Overall) AS Nation_Rating,
     AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Overall ELSE NULL END) AS Defence_Rating,
     AVG(CASE WHEN Best_Position IN ('CDM', 'CAM', 'CM', 'RM', 'LM') THEN Overall ELSE NULL END) AS Midfield_Rating,
-    AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Overall ELSE NULL END) AS Attack_Rating
+    AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Overall ELSE NULL END) AS Forward_Rating
 		--,AVG(Potential) AS Nation_Pot_Rating,
-  --  AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Potential ELSE NULL END) AS Defence_Rating,
+  --  AVG(CASE WHEN Best_Position IN ('LB', 'CB', 'RB', 'LWB', 'RWB') THEN Potential ELSE NULL END) AS Defense_Rating,
   --  AVG(CASE WHEN Best_Position IN ('CDM', 'CAM', 'CM', 'RM', 'LM') THEN Potential ELSE NULL END) AS Midfield_Rating,
-  --  AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Potential ELSE NULL END) AS Attack_Rating
+  --  AVG(CASE WHEN Best_Position IN ('LW', 'RW', 'ST', 'CF') THEN Potential ELSE NULL END) AS Forward_Rating
 FROM Fifa23Project..PlayerData 
 GROUP BY Nationality
 --ORDER BY Nation_Pot_Rating DESC;
@@ -281,7 +281,7 @@ UNION ALL
 
 SELECT 'Potential_TOTY' AS Team, SUM(value_in_euro) AS Total_Value, NULL as avg_Overall, AVG(Potential) AS avg_Potential, AVG(age) AS avg_Age
 FROM Fifa23Project..Pot_TOTY
---The actual team of the year is less expensive (€948 million) than the potential team of the year (€ 1.196 billion)
+--The actual team of the year is less expensive (â‚¬948 million) than the potential team of the year (â‚¬ 1.196 billion)
 --However, with a higher average rating (91.1) than the actual team (89.2), and a lower average age (24.3 years) than the actual team (30.5 years) it is maybe worth the investment
 
 
@@ -296,30 +296,30 @@ SELECT Known_As,Positions_Played, Best_Position, Overall, Potential, Age,
             THEN
                 CASE
                     WHEN Positions_Played = Best_Position AND Overall = Potential
-                        THEN 'Player has reached potential in the perfect conditions'
+                        THEN 'The player has reached his potential in the perfect conditions'
                     WHEN Positions_Played = Best_Position AND Overall <> Potential
                         THEN
                             CASE
                                 WHEN Age <= 27 THEN 'Player likely to reach potential'
-                                ELSE 'Player is unlikely to reach potential'
+                                ELSE 'The player is unlikely to reach his potential'
                             END
                     WHEN Positions_Played <> Best_Position AND Overall = Potential
-                        THEN 'Player has reached potential'
-                    ELSE 'With a change of position, the player might reach potential'
+                        THEN 'The player has reached his potential'
+                    ELSE 'With a change of position, the player might reach his potential'
                 END
         ELSE -- Multiple positions
             CASE
                 WHEN CHARINDEX(Best_Position, Positions_Played) > 0 AND Overall = Potential
-                    THEN 'Player has reached potential in the perfect conditions'
+                    THEN 'The player has reached his potential in the perfect conditions'
                 WHEN CHARINDEX(Best_Position, Positions_Played) > 0 AND Overall <> Potential
                     THEN
                         CASE
-                            WHEN Age <= 27 THEN 'Player likely to reach potential'
-                            ELSE 'Player is unlikely to reach potential'
+                            WHEN Age <= 27 THEN 'The player is likely to reach his potential'
+                            ELSE 'The player is unlikely to reach his potential'
                         END
                 WHEN CHARINDEX(Best_Position, Positions_Played) = 0 AND Overall = Potential
-                    THEN 'Player has reached potential'
-                ELSE 'With a change of position, the player might reach potential'
+                    THEN 'The player has reached his potential'
+                ELSE 'With a change of position, the player might reach his potential'
             END
     END AS Outcome
 FROM Fifa23Project..PlayerData
@@ -327,22 +327,4 @@ FROM Fifa23Project..PlayerData
 --For most of the young players (27 years or less), they did not reach their potential: this might be due to the lack of experience.
 --Some players did not reach their potential because they are playing in a postion that is not their best. Potential might be reached if he changes his playing position.
 --Some players are playing at their ideal position and are older than 27. Usually those players are unlikely to reach their potential. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
