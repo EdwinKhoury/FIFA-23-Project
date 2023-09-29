@@ -28,27 +28,27 @@ Real Madrid CF is the club with the highest wage, accounting for a total of €2
 
 ![Top 5 Clubs Rating](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/675eed5f-d9c2-4f5a-b424-c3d37f788f40)
 
-Considering the whole squad when computing the average rating of the club, FC Bayern Munchen has the highest rating with 80.59. Also, its defense (80.2), as well as its midfield (82.14) is also ranked first. However, compared to the other clubs completing the top 5, FC Bayern Munchen has the lowest number of players, which can explain the high rating.
+Considering the whole squad when computing the average rating of the club, FC Bayern Munchen has the highest rating with 80.59. Also, its defense (80.2) as well as its midfield (82.14) are ranked first. However, compared to the other clubs completing the top 5, FC Bayern Munchen has the lowest number of players, which can explain the high rating.
 
 
 ![Top 5 Clubs Using the Best 20 Players of the Team](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/dd0f266a-d7e7-4166-ba6c-8a1209908b8a)
 
-Here, only the top 20 players are considered when computing the average overall rating of the team. FC Barcelona which was outside the top 5 in the table above is now in it. FC Bayern Munchen that was in the top 5 in the table above is not in it. This can be explained by the selection of the top 20 players of each team and not the whole squad. Here, Liverpool has the highest average overall rating (85)
-As for the average potential rating, it is Real Madrid FC that tops the table with a rating of 87.81. 
-Also, among the top 5 teams, FC Barcelona has the highest improvement percentage rate with room for improvement of 4.23%.
+Here, only the top 20 players are considered when computing the average overall rating of the team. FC Barcelona, which was outside the top 5 in the table above, is now in it. FC Bayern Munchen, which was in the top 5 in the table above, is not in it. This can be explained by the selection of the top 20 players of each team, not the whole squad. Here, Liverpool has the highest average overall rating (85)
+As for the average potential rating, it is Real Madrid FC that tops the table with a rating of 87.81.
+Also, among the top 5 teams, FC Barcelona has the highest improvement percentage rate, with room for improvement of 4.23%.
 
 
 ## **Nation Rating**
 
 ![Top 5 Nation Ratings (1)](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/b56f2393-545d-4b0d-972c-afdfaddac929)
 
-Unexpectedly, Libya is the Nation with the best average overall rating of 73.33. This is because only 3 players are taken into consideration. Brazil completes the top 3 with an average of 71.6.
+Unexpectedly, Libya is the nation with the best average overall rating of 73.33. This is because only three players are taken into consideration. Brazil completes the top 3 with an average of 71.6.
 Good teams such as Spain, England, and France are very low in the ranking since they have a lot of players. England has 1632 players with an average rating of 64. It does not reflect the ranking of the team
 
 
 ![Top 5 Nations Using the Best 20 Players of the Team](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/969a7fd3-b404-4f11-8133-1b8b16353e09)
 
-
+This table reflects the ranking of the national team compared to the above one. Considering only the top 20 players in each country, France has the highest average overall rating (87) as well as the highest average potential rating (89.5). Spain, Germany, and Portugal also made their way to the top 5. Singapore is the country that has the highest improvement percentage rate at 23.6%
 
 
 
