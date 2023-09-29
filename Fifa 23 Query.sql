@@ -5,7 +5,7 @@ SELECT Best_Position, COUNT (Best_Position) AS COUNT
 FROM Fifa23Project..PlayerData
 GROUP BY Best_Position
 ORDER BY COUNT DESC
--- CB is the position with the most players, and CF has the least.
+--CB is the position with the most players, and CF has the least.
 
 
 ----------------
@@ -56,7 +56,7 @@ FROM Fifa23Project..PlayerData
 GROUP BY Club_Name
 --ORDER BY Club_Pot_Rating DESC;
 ORDER BY Club_Rating DESC;
---FC Bayern Munchen has the highest club rating as well as the highest defense and midfield.
+--FC Bayern Munchen has the highest club rating as well as the highest defense, and midfield.
 --However, compared to the other top 5 clubs, it has the least number of players, which explains the high rating.
 
 
@@ -84,9 +84,9 @@ GROUP BY Club_Name
 --ORDER BY improvement_percentage desc
 --ORDER BY average_potential_rating desc
 ORDER BY average_overall_rating DESC
---Here only the 20 top players are considered when calculating the average rating of the team. So is is higher than the above code.
---Real Madrid FC has the highest average overall rating with a rating of 85. In the above code Real Madrid FC had an average of 76.7 since it was counting 34 players.
---Real Madrid FC also has the highest average potential rating with a rating of 87.8, considering their top 20 players.
+--Here only the 20 top players are considered when calculating the average rating of the team. So it is higher than the above code.
+--Real Madrid FC has the highest average overall rating of 85. In the above code, Real Madrid FC had an average of 76.7 since it was counting 34 players.
+--Real Madrid FC also has the highest average potential rating of 87.8, considering their top 20 players.
 --FC Nordsjaelland has the highest improvement percentage rate at 16.45%
 
 
@@ -109,7 +109,7 @@ FROM Fifa23Project..PlayerData
 GROUP BY Nationality
 --ORDER BY Nation_Pot_Rating DESC;
 ORDER BY Nation_Rating DESC;
---Libya has the best nation rating. But this is because of the number of players that is very low (3). Brazil completes the top 3 with an average of 71.6
+--Libya has the best nation rating. But this is because the number of players that is very low (3). Brazil completes the top 3 with an average of 71.6
 --Good teams such as Spain, England, and France are very low in the ranking since they have a lot of players. England has 1632 players with an average rating of 64
 --It does not reflect the ranking of the team. 
 
@@ -200,7 +200,7 @@ Formation AS (
 )
     SELECT *
 	FROM Formation;
---For a 4-3-3 formation, the following players are the best rated at their respective positions.
+--For a 4-3-3 formation, the following players are the best-rated at their respective positions.
 
 
 ----------------
@@ -325,6 +325,6 @@ SELECT Known_As,Positions_Played, Best_Position, Overall, Potential, Age,
 FROM Fifa23Project..PlayerData
 --For every player, there is an outcome that analyses their career.
 --For most of the young players (27 years or less), they did not reach their potential: this might be due to the lack of experience.
---Some players did not reach their potential because they are playing in a postion that is not their best. Potential might be reached if he changes his playing position.
---Some players are playing at their ideal position and are older than 27. Usually those players are unlikely to reach their potential. 
+--Some players do not reach their potential because they are playing in a position that is not their best. Potential might be reached if he changes his playing position.
+--Some players are playing at their ideal position and are older than 27. Usually, those players are unlikely to reach their potential. 
 
