@@ -52,34 +52,6 @@ Good teams such as Spain, England, and France are very low in the ranking since 
 This table reflects the ranking of the national team compared to the above one. Considering only the top 20 players in each country, France has the highest average overall rating (87) as well as the highest average potential rating (89.5). Spain, Germany, and Portugal also made their way to the top 5. Singapore is the country that has the highest improvement percentage rate at 23.6%
 
 
-## **Career Outcomes**
-
-![Career Outcomes](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/fbc67858-9075-4001-8894-776e22675337)
-
-In the above table, the career of every player is analyzed by taking into consideration their position played, their best position on the field, their actual and potential ratings, and finally their age. A sample of each outcome is shown in the table above.
-A player who has an overall rating equal to the potential rating  while playing in his best position is considered a player who has reached his potential in the perfect conditions: this is the case with Karim Benzema.
-A player who has an overall rating equal to the potential rating, but did not play in his best position is considered a player who has reached his potential: this is the case with Lionel Messi.
-A player who has an overall rating different than that of the potential rating, but is older than 27, is considered a player who is unlikely to reach his potential: this is the case with Marquinos.
-A player who has an overall rating different than that of the potential rating, and is younger than 27, but who does not play in his best position, might reach his potential with a change of position: this is the case with Trent Alexander-Arnold.
-A player who has an overall rating different than that of the potential rating is younger than 27, and plays at his best position, is likely to reach his potential: this is the case with Kylian Mbappe.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Actual Team of the Year**
 
 ![Actual Team of the Year](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/7e233bb1-93c8-4d9a-b5a9-47998f1f58f4)
@@ -96,3 +68,14 @@ Choosing a 4-3-3 formation, the above players have the highest potential rating 
 Joao Cancelo, Mohamad Salah, and Ruben Dias are the only players that feature on both teams, the actual and the potential; this means that there is no other player that is emerging with a better rating at their respective position.
 With an average age of 24.7 years, the investment is worth it, although the actual team is cheaper. It is, however, much older.
 
+
+## **Career Outcomes**
+
+![Career Outcomes](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/fbc67858-9075-4001-8894-776e22675337)
+
+In the above table, the career of every player is analyzed by taking into consideration their position played, their best position on the field, their actual and potential ratings, and finally their age. A sample of each outcome is shown in the table above.
+A player who has an overall rating equal to the potential rating  while playing in his best position is considered a player who has reached his potential in the perfect conditions: this is the case with Karim Benzema.
+A player who has an overall rating equal to the potential rating, but did not play in his best position is considered a player who has reached his potential: this is the case with Lionel Messi.
+A player who has an overall rating different than that of the potential rating, but is older than 27, is considered a player who is unlikely to reach his potential: this is the case with Marquinos.
+A player who has an overall rating different than that of the potential rating, and is younger than 27, but who does not play in his best position, might reach his potential with a change of position: this is the case with Trent Alexander-Arnold.
+A player who has an overall rating different than that of the potential rating is younger than 27, and plays at his best position, is likely to reach his potential: this is the case with Kylian Mbappe.
