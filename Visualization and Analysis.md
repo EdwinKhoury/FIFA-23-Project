@@ -57,7 +57,7 @@ This table reflects the ranking of the national team compared to the above one. 
 ![Actual Team of the Year](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/7e233bb1-93c8-4d9a-b5a9-47998f1f58f4)
 
 Choosing a 4-3-3 formation, the above players are the best players at their respective positions, with an average overall of 89.18 and a value of €948 million on the market.
-However, with an average age of 30.55, this team can be replaced by other players who are reaching their potential
+However, with an average age of 30.55, this team can be replaced by other players who are reaching their potential.
 
 
 ## **Potential Team of the Year**
