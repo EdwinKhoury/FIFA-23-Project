@@ -33,7 +33,7 @@ Considering the whole squad when computing the average rating of the club, FC Ba
 
 ![Top 5 Clubs Using the Best 20 Players of the Team](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/dd0f266a-d7e7-4166-ba6c-8a1209908b8a)
 
-Here, only the top 20 players are considered when computing the average overall rating of the team. FC Barcelona, which was outside the top 5 in the table above, is now in it. FC Bayern Munchen, which was in the top 5 in the table above, is not in it. This can be explained by the selection of the top 20 players of each team, not the whole squad. Here, Liverpool has the highest average overall rating (85)
+Here, only the top 20 players are considered when computing the average overall rating of the team. FC Barcelona, which was outside the top 5 in the table above, is now in it. FC Bayern Munchen, which was in the top 5 in the table above, is not in it. This can be explained by the selection of the top 20 players of each team, not the whole squad. Here, Liverpool has the highest average overall rating (85).
 As for the average potential rating, it is Real Madrid FC that tops the table with a rating of 87.81.
 Also, among the top 5 teams, FC Barcelona has the highest improvement percentage rate, with room for improvement of 4.23%.
 
@@ -44,7 +44,7 @@ Also, among the top 5 teams, FC Barcelona has the highest improvement percentage
 
 
 Unexpectedly, Libya is the nation with the best average overall rating of 73.33. This is because only three players are taken into consideration. Brazil completes the top 3 with an average of 71.6.
-Good teams such as Spain, England, and France are very low in the ranking since they have a lot of players. England has 1632 players with an average rating of 64. It does not reflect the ranking of the team
+Good teams such as Spain, England, and France are very low in the ranking since they have a lot of players. England has 1632 players with an average rating of 64. It does not reflect the ranking of the team.
 
 
 ![Top 5 Nations Using the Best 20 Players of the Team](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/969a7fd3-b404-4f11-8133-1b8b16353e09)
@@ -52,6 +52,16 @@ Good teams such as Spain, England, and France are very low in the ranking since 
 This table reflects the ranking of the national team compared to the above one. Considering only the top 20 players in each country, France has the highest average overall rating (87) as well as the highest average potential rating (89.5). Spain, Germany, and Portugal also made their way to the top 5. Singapore is the country that has the highest improvement percentage rate at 23.6%
 
 
+## **Career Outcomes**
+
+![Career Outcomes](https://github.com/EdwinKhoury/FIFA-23-Project/assets/146214280/fbc67858-9075-4001-8894-776e22675337)
+
+In the above table, the career of every player is analyzed by taking into consideration their position played, their best position on the field, their actual and potential ratings, and finally their age. A sample of each outcome is shown in the table above.
+A player who has an overall rating equal to the potential rating  while playing in his best position is considered a player who has reached his potential in the perfect conditions: this is the case with Karim Benzema.
+A player who has an overall rating equal to the potential rating, but did not play in his best position is considered a player who has reached his potential: this is the case with Lionel Messi.
+A player who has an overall rating different than that of the potential rating, but is older than 27, is considered a player who is unlikely to reach his potential: this is the case with Marquinos.
+A player who has an overall rating different than that of the potential rating, and is younger than 27, but who does not play in his best position, might reach his potential with a change of position: this is the case with Trent Alexander-Arnold.
+A player who has an overall rating different than that of the potential rating is younger than 27, and plays at his best position, is likely to reach his potential: this is the case with Kylian Mbappe.
 
 
 
